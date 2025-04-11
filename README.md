@@ -51,7 +51,7 @@ Follow these instructions to set up and run the project on your local machine.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/abandoned-waste-detection.git
+   git clone https://github.com/aaadityasngh/Abandoned-Waste-Detection---IEEE-Project
    cd abandoned-waste-detection
    ```
 
@@ -139,4 +139,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 **Aditya Singh**
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/) or check out my other projects on [GitHub](https://github.com/your-username).
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/) or check out my other projects on [GitHub](https://github.com/aaadityasngh).
