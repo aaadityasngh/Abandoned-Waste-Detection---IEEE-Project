@@ -3,6 +3,10 @@ import json
 from datetime import datetime
 
 def draw_segmented_labels(frame, result):
+    if result.masks is None:
+        print("⚠️  No segmentation masks found in the result.")
+        return frame, []
+
     names = result.names
     detections = []
 
