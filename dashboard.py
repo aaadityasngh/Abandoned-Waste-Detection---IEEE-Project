@@ -67,3 +67,22 @@ if st.button("🖨️ Create Report"):
             st.markdown(link, unsafe_allow_html=True)
     else:
         st.error("❌ Failed to generate report.")
+
+# --- NEW SECTION: Start Webcam Detection ---
+st.markdown("---")
+st.subheader("🎥 Real-time Webcam Segmentation")
+
+if st.button("🟢 Start Webcam Detection"):
+    st.info("Webcam stream running... Press 'q' in the popup window to stop.")
+    import subprocess
+    subprocess.run(["python", "detect_webcam.py"])
+
+# --- AUTO SCHEDULER CONTROL ---
+st.markdown("---")
+st.subheader("⏰ Auto Scheduler for Video Folder")
+
+if st.button("🚀 Start Auto Scheduler"):
+    from auto_scheduler import start_scheduler
+    start_scheduler()
+    st.success("Scheduler started! Watching 'watch_folder/' for .mp4 files.")
+    st.info("Put .mp4 files in that folder and wait ~60s to process.")
